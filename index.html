@@ -21,6 +21,7 @@
         /* Light Mode */
         --bg-color: #ffffff;
         --text-color: #171a20;
+        --text-color-p: #393939;
         --text-muted: #5c5e62;
         --nav-bg: rgba(255, 255, 255, 0.65);
         --nav-border: rgba(255, 255, 255, 0.5);
@@ -91,6 +92,7 @@
         /* Dark Mode */
         --bg-color: #0b0829;
         --text-color: #ffffff;
+        --text-color-p: gray;
         --text-muted: rgba(255, 255, 255, 0.7);
         --nav-bg: rgba(11, 8, 41, 0.65);
         --nav-border: rgba(255, 255, 255, 0.1);
@@ -2106,6 +2108,15 @@
         -webkit-backdrop-filter: blur(30px);
         border: 1px solid var(--card-border);
       }
+      .accordion .accordion-title {
+        color: var(--text-color);
+      }
+      .accordion .accordion-title:hover {
+        color: var(--accent-gold);
+      }
+      .accordion .accordion-content {
+        color: var(--text-color-p);
+      }
     </style>
   </head>
   <body>
@@ -2362,7 +2373,7 @@
             </div>
           </div>
         </section>
-        <section class="contact-glass-wrapper relative mx-auto py-20">
+        <section class="help-faq contact-glass-wrapper relative mx-auto py-20">
           <div class="max-w-3xl mx-auto px-6">
             <div class="text-center mb-16">
               <h2 class="text-3xl font-display mb-4">Pricing Plans</h2>
@@ -2371,9 +2382,9 @@
                 investment opportunities at SkyPioneers.
               </p>
             </div>
-            <div class="space-y-4">
+            <div class="accordion space-y-4">
               <div
-                class="border-b border-slate-100 dark:border-slate-800 last:border-0"
+                class="help-faq-card border-b border-slate-100 dark:border-slate-800 last:border-0"
               >
                 <button
                   class="w-full py-6 flex items-center justify-between text-left group"
@@ -2385,23 +2396,8 @@
                     ><i class="fa-solid fa-plus"></i
                   ></span>
                 </button>
-              </div>
-              <div
-                class="border-b border-slate-100 dark:border-slate-800 last:border-0"
-              >
-                <button
-                  class="w-full py-6 flex items-center justify-between text-left group"
-                >
-                  <span class="accordion-title font-medium transition-colors"
-                    >How secure are your payment information?</span
-                  >
-                  <span class="material-icons-outlined text-slate-400"
-                    ><i class="fa-solid fa-minus"></i
-                  ></span>
-                </button>
                 <div
-                  class="pb-8 space-y-4 leading-relaxed"
-                  style="color: #393939"
+                  class="accordion-content pb-8 space-y-4 leading-relaxed"
                 >
                   <p>
                     Far far away, behind the word mountains, far from the
@@ -2418,7 +2414,37 @@
                 </div>
               </div>
               <div
-                class="border-b border-slate-100 dark:border-slate-800 last:border-0"
+                class="help-faq-card border-b border-slate-100 dark:border-slate-800 last:border-0"
+              >
+                <button
+                  class="w-full py-6 flex items-center justify-between text-left group"
+                >
+                  <span class="accordion-title font-medium transition-colors"
+                    >How secure are your payment information?</span
+                  >
+                  <span class="material-icons-outlined text-slate-400"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
+                </button>
+                <div
+                  class="accordion-content pb-8 space-y-4 leading-relaxed"
+                >
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="help-faq-card border-b border-slate-100 dark:border-slate-800 last:border-0"
               >
                 <button
                   class="w-full py-6 flex items-center justify-between text-left group"
@@ -2430,9 +2456,25 @@
                     ><i class="fa-solid fa-plus"></i
                   ></span>
                 </button>
+                <div
+                  class="accordion-content pb-8 space-y-4 leading-relaxed"
+                >
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
               </div>
               <div
-                class="border-b border-slate-100 dark:border-slate-800 last:border-0"
+                class="help-faq-card border-b border-slate-100 dark:border-slate-800 last:border-0"
               >
                 <button
                   class="w-full py-6 flex items-center justify-between text-left group"
@@ -2444,9 +2486,25 @@
                     ><i class="fa-solid fa-plus"></i
                   ></span>
                 </button>
+                <div
+                  class="accordion-content pb-8 space-y-4 leading-relaxed"
+                >
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
               </div>
               <div
-                class="border-b border-slate-100 dark:border-slate-800 last:border-0"
+                class="help-faq-card border-b border-slate-100 dark:border-slate-800 last:border-0"
               >
                 <button
                   class="w-full py-6 flex items-center justify-between text-left group"
@@ -2458,6 +2516,22 @@
                     ><i class="fa-solid fa-plus"></i
                   ></span>
                 </button>
+                <div
+                  class="accordion-content pb-8 space-y-4 leading-relaxed"
+                >
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -2467,7 +2541,7 @@
             <h2 class="text-3xl font-display mb-4">
               You still have a question?
             </h2>
-            <p class="text-slate-500 dark:text-slate-400 mb-12">
+            <p class="text-color-p mb-12">
               If you cannot find answer to your question in our FAQ, you can
               always contact us. We will answer you shortly!
             </p>
